@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: #ff6666;
+}
+
+.kontejnerGlavni{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.kontejner1{
+    width: 47%;
+    color: beige;
+}
+.naslov{
+    font-size: 350%;
+}
+
+.tekst{
+    font-size: 120%;
+    text-align: justify;
+    margin-top: 7%;
+}
+
+.kontejner2{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+
+.reklama{
+    color: beige;
+    background-color: #4da6ff;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 120%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.reklama span {
+    font-size: 120%;
+    font-weight: bolder;
+}
+
+.unosi{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    background-color: beige;
+    border-radius: 7px;
+    margin-top: 4%;
+}
+
+.unos{
+    width: 80%;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 5%;
+    border: 1px solid grey;
+    padding-left: 4%;
+    border-radius: 7px;
+    font-size: large;
+    position: relative;
+}
+
+.unos:focus{
+    outline-color: grey;
+}
+
+.ne{
+    width: 85%;
+    margin: auto;
+    position: relative;
+}
+
+.poruka{
+    text-align: right;
+    margin: auto;
+    margin-top: 1.5%;
+    font-style: italic;
+    display: none;
+}
+
+.poruka.lose {
+    color: red;
+    display: block;
+}
+.poruka.dobro {
+    color: green;
+    display: block;
+}
+
+.greska{
+    position: absolute;
+    margin-left: 88%;
+    margin-top: -37px;
+    display: none;
+}
+
+.dugme{
+    width: 85%;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    border-radius: 7px;
+    border: none;
+    background-color: #00ffcc;
+    font-size: 120%;
+    color: beige;
+}
+
+.dugme:focus{
+    outline-color: grey;
+}
+
+.uslovi{
+    text-align: center;
+    color: grey;
+    width: 85%;
+    margin:auto;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    font-size: smaller;
+}
+
+.uslovi a{
+    color: red;
+}
+
+@media (max-width: 800px){
+    .kontejnerGlavni{
+        flex-direction: column;
+        width: 100%;
+    }
+    .kontejner1{
+        width: 90%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    .naslov{
+        font-size: 200%;
+        padding-bottom: 2%;
+        text-align: center;
+    }
+    .tekst{
+        font-size: medium;
+        margin-top: 0;
+        text-align: center;
+    }
+    .kontejner2{
+        width: 90%;
+    }
+    .reklama{
+        width: 100%;
+        margin: auto;
+        font-size: 80%;
+        padding-top: 6%;
+        padding-bottom: 6%;
+
+    }
+
+}
